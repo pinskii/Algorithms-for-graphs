@@ -1,10 +1,9 @@
-# A template for Ford Fulkerson algorithm and min cut
+# Ford Fulkerson algorithm and min cut
 
 from graph import Graph
 from copy import deepcopy as copy
 import sys
 from collections import deque
-#from icecream import ic
 
 
 ## This code assumes flow is dictionary with keys (u,v) and values flow(u,v)
@@ -20,9 +19,6 @@ def SumFlow(f1,f2):
       f[(u,v)] = f1[(u,v)] + f2[(u,v)]
   return f
 
-
-
-## This is an EXAMPLE of how the flow network class can be implemented, some implementation is missing
 class FlowNetwork:
   def __init__(self,G) -> None:
     self.G = G
